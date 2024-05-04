@@ -1,0 +1,29 @@
+{
+  "name": "mirror-format",
+  "version": "0.0.0",
+  "description": "Formatting for MirrorDrive diffing and count",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && brittle test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukks/mirror-format.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lukks/mirror-format/issues"
+  },
+  "homepage": "https://github.com/lukks/mirror-format#readme",
+  "devDependencies": {
+    "brittle": "^3.3.2",
+    "localdrive": "^1.11.4",
+    "standard": "^17.1.0",
+    "test-tmp": "^1.2.1"
+  },
+  "dependencies": {
+    "tiny-byte-size": "^1.1.0",
+    "tiny-crayon": "^1.0.5"
+  }
+}
