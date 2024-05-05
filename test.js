@@ -1,11 +1,12 @@
+// tiny-crayon defaults to check this for colors
+process.stdout.isTTY = true
+
 const test = require('brittle')
 const Localdrive = require('localdrive')
 const tmp = require('test-tmp')
 const format = require('./index.js')
 
-// Skip due CI is not TTY, avoids any hack
-
-test.skip('basic', async function (t) {
+test('basic', async function (t) {
   const src = new Localdrive(await tmp(t))
   const dst = new Localdrive(await tmp(t))
 
