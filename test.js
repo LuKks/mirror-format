@@ -31,6 +31,7 @@ test.skip('basic', async function (t) {
     t.alike(actual.sort(), expected.sort())
 
     t.is(format.count(mirror.count), '\x1B[32m+3\x1B[39m \x1B[31m-0\x1B[39m \x1B[33m~0\x1B[39m')
+    t.is(format.bytes(mirror), '\x1B[32m+31B\x1B[39m')
   }
 
   {
@@ -55,5 +56,6 @@ test.skip('basic', async function (t) {
     t.alike(actual.sort(), expected.sort())
 
     t.is(format.count(mirror.count), '\x1B[32m+0\x1B[39m \x1B[31m-1\x1B[39m \x1B[33m~2\x1B[39m')
+    t.is(format.bytes(mirror), '\x1B[31m-1B\x1B[39m')
   }
 })
